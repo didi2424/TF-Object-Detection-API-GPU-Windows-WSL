@@ -24,8 +24,8 @@ This README.md describes every step required to get going with your custom objec
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#environment-in-windows">Environment in Windows</a></li>
+        <li><a href="#environment-in-ubuntu-on-windows-wsl">Environment in Ubuntu on Windows _(WSL)_</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -73,8 +73,8 @@ If you don't like to dual boot this is good tutorial for you ❤️
 Tensorflow's GPU allows your PC to use the graphic card to provide extra processing power while training the dataset and the models, so it will be used for this tutoral, in the air GPU provide faster training dataset than CPU. Nowday Tensorflow => 2.11 is not supporting Windows to use a GPU. So, you are need 'Ubuntu on Windows' to solve this.
 
 
-
-### Environment in Windows
+<!-- Environment in Windows -->
+## Environment in Windows
 
 _Enable you windows WSL_
 1. Click Start on your windows and search Windows Features
@@ -100,7 +100,9 @@ _Downloads Ubuntu on Windows_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Environment in Ubuntu on Windows _(WSL)_
+
+<!-- Environment in Ubuntu on Windows WSL -->
+### Environment in Ubuntu on Windows WSL
 _Install Miniconda 3 inside WSL_
 1. Open your WSL and Command
    ```sh
