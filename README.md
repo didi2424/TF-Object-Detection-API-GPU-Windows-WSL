@@ -17,6 +17,9 @@ This README.md describes every step required to get going with your custom objec
       <a href="#the-basics">The Basics</a>
     </li>
     <li>
+    <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
