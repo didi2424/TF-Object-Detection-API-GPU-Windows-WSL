@@ -45,6 +45,8 @@ The purpose of this tutorial is to explain how to train you custom Convolutional
 Serveral Good Tutorial avaliable in github for how to use Tensorflow Object Detection API. Hovewer in this tutorial that use Tensorflow version 2.11. Tensorflow >= 2.11 will no longger supported on Windows for GPU usage. Tensorflow for future version seems using Linux for supported GPU usage.  
 If you don't like to dual boot this is good tutorial for you ❤️
 
+If you
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +91,7 @@ _Enable you windows WSL_
 
 _Downloads Ubuntu on Windows_
 1. Click Start on your windows and search Microsoft Store
-2. on search bar Type
+2. on search bar Microsoft Store
    ```sh
    Ubuntu on Windows
    ```
@@ -120,16 +122,7 @@ _Install Miniconda 3 inside WSL_
    conda create --name tfod python=3.8.10 -y
    conda deactivate
    ```
-5. Install Cuda Driver for Windows WSL
-   ```sh
-   wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
-   sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
-   wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
-   sudo dpkg -i cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
-   sudo cp /var/cuda-repo-wsl-ubuntu-12-1-local/cuda-*-keyring.gpg /usr/share/keyrings/
-   sudo apt-get update
-   sudo apt-get -y install cuda
-   ```
+
 6. Activate the env 
    ```sh
    conda activate tfod
@@ -138,18 +131,29 @@ _Install Miniconda 3 inside WSL_
    ```sh
    conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
    ```
-8. Install CudaToolkit and Cudnn
+8. Nividia-Tensorrt
    ```sh
    pip install nvidia-pyindex
    pip install nvidia-tensorrt==7.2.3.4
    pip install pycocotools==2.0.2
    pip install tensorflow-addons==0.19.0
-   ```
-9. Configure The system paths
-   ```sh
    python3 -c "import tensorrt; print(tensorrt.__version__); assert tensorrt.Builder(tensorrt.Logger())"
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
-   mkdir -p $CONDA_PREFIX/etc/conda/activate.d
+   ```
+5. Install Cuda Driver for Windows WSL
+   ```sh
+   cd $CONDA_PREFIX
+   wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
+   sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
+   wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
+   sudo dpkg -i cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
+   sudo cp /var/cuda-repo-wsl-ubuntu-12-1-local/cuda-*-keyring.gpg /usr/share/keyrings/
+   sudo apt-get update
+   sudo apt-get -y install cuda
+   ```
+9. Configure The system paths you must deactive conda environment first to setup Configure The System Paths
+   ```sh
+   conda deactivate
+   mkdir -p $CONDA_PREFIX/etc/conda/ activate.d
    echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
    echo ln -s $CONDA_PREFIX/lib/python3.8/site-packages/tensorrt/libnvinfer.so.8  $CONDA_PREFIX/lib/libnvinfer.so.7
    echo ln -s $CONDA_PREFIX/lib/python3.8/site-packages/tensorrt/libnvinfer_plugin.so.8 $CONDA_PREFIX/lib/libnvinfer_plugin.so.7
@@ -160,12 +164,11 @@ _Install Miniconda 3 inside WSL_
     to see if configure the system paths is correct 
 
     ```sh
-    code $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+    nano $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
     ```
 10. Deactivate and Activate again the conda env
     ```sh
-    Conda deactivate
-    Conda activate tfod
+    conda activate tfod
     ```
 11. Install Jupyter Notebook for our Interface to the env
     ```sh
@@ -173,12 +176,16 @@ _Install Miniconda 3 inside WSL_
     ``` 
 12. Run Jupyter notebook
     ```sh
-    Jupyter Notebook
+    jupyter notebook
     ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Install Tensorflow Object API using Jupyter Notebook Interface
+Everything you need Build With ❤️ using Install-Tensorflow-Object-API.ipynb inside this Repository. This notebook contain to Download, install Tensorflow Model Garden, Make Directory for your project. 
 
+
+ 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
