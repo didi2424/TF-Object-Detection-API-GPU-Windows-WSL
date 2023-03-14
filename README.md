@@ -99,6 +99,7 @@ _Downloads Ubuntu on Windows_
 5. First time you open Ubuntu on Windows you need to configure the ubuntu name and password.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Environment in Ubuntu on Windows _(WSL)_
 _Install Miniconda 3 inside WSL_
 1. Open your WSL and Command
