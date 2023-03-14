@@ -14,7 +14,7 @@ This README.md describes every step required to get going with your custom objec
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#The-Basic">The Basic</a>
+      <a href="#The-Basics">The Basics</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
