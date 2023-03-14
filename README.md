@@ -1,7 +1,4 @@
-
-
- 
-
+ <a name="readme-top"></a>
 
 <!-- The Basics -->
 ## The Basics
@@ -79,17 +76,69 @@ Tensorflow's GPU allows your PC to use the graphic card to provide extra process
 
 ### Environment in Windows
 
-_This Environment that you will need._
+_Enable you windows WSL_
+1. Click Start on your windows and search Windows Features
+2. in the Windows Features Find And Enable
+   ```sh
+   Enable Virtual Machine Platfrom
+   Enable Windows WSL
+   ```
+3. Click Ok 
 
-1. Click Start on your windows and open Microsoft Store
+
+
+_Downloads Ubuntu on Windows_
+1. Click Start on your windows and search Microsoft Store
 2. on search bar Type
    ```sh
    Ubuntu on Windows
    ```
 3. Click Get
 
-4. After downloading and instaling Ubuntu on Windows Apps will apear in _Start Menu_
+4. After downloading and instaling Ubuntu on Windows Apps will appear in _Start Menu_
+5. First time you open Ubuntu on Windows you need to configure the ubuntu name and password.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Environment in Ubuntu on Windows _(WSL)_
+_Install Miniconda 3 inside WSL_
+1. Open your WSL and Command
+   ```sh
+   sudo apt-get update
+   sudo apt-get install wget
+   ```
+2. Download Miniconda for Linux and install
+   ```sh
+   wget https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh
+   sh ./Miniconda3-py39_4.12.0-Linux-x86_64.sh
+   ```
+3. Wait until installation is finished
+4. After Miniconda installation is done you need make an env (in this tutorial we named env to 'tfod') with python 3.8.10
+   ```sh
+   conda create --name tfod python=3.8.10 -y
+   conda deactivate
+   ```
+5. Install Cuda Driver for Windows WSL
+   ```sh
+   wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
+   sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
+   wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
+   sudo dpkg -i cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
+   sudo cp /var/cuda-repo-wsl-ubuntu-12-1-local/cuda-*-keyring.gpg /usr/share/keyrings/
+   sudo apt-get update
+   sudo apt-get -y install cuda
+   ```
+6. Activate the env 
+   ```sh
+   conda activate tfod
+   ```
+7. Install Jupyter Notebook for our Interface to the env
+   ```sh
+   conda install jupyter notebook -y
+   ``` 
+8. Run Jupyter notebook
+   ```sh
+   Jupyter Notebook
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
