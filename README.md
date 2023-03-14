@@ -1,5 +1,7 @@
 # HOW to Custom Object Detection Using Tensorflow 2.11 (GPU) with Custom Training Dataset and Custom Models inside WINDOWS WSL, Conda Environment and Nvidia GPU
 
+
+<!-- The Basics -->
 ## 🦉 The Basics
 
 This repository is a tutorial for how to use Tensorflow's Object Detection API (boxes Classsifier) to train an image into object detection classifier on Windows 11 Host. also when Tensorflow 2.11 is not support GPU inside Windows anymore, so we can use Ubuntu on Windows as our main host 
@@ -12,7 +14,7 @@ This README.md describes every step required to get going with your custom objec
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">The Basic</a>
+      <a href="#The Basic">The Basic</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
