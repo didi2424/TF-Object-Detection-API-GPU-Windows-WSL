@@ -54,7 +54,8 @@ Use the `BLANK_README.md` to get started.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Environment Windows 10/11
-* [![Tensorflow][Tensorflow]][Next-url]
+* [![Windows][Windows]][Windows-url]
+* [![Miniconda][Miniconda]][Miniconda-url]
 
 ### Built With
 
@@ -112,3 +113,8 @@ This is an example of how to list things you need to use the software and how to
 [Nvidia-url]: https://ubuntu.com/wsl
 [Jupyter-Notebook]: https://img.shields.io/badge/Jupyter/Notebook-000000?style=for-the-badge&logo=Jupyter&logoColor=orange
 [Jupyter-Notebook-url]: https://jupyter.org/
+[Windows]: https://img.shields.io/badge/Windows/WSL-000000?style=for-the-badge&logo=windows&logoColor=blue
+[Windows-url]: https://jupyter.org/
+[miniconda]: https://img.shields.io/badge/Miniconda-000000?style=for-the-badge&logo=Anaconda&logoColor=green
+[miniconda-url]: https://jupyter.org/
+
