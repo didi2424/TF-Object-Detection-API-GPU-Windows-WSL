@@ -134,14 +134,47 @@ _Install Miniconda 3 inside WSL_
    ```sh
    conda activate tfod
    ```
-7. Install Jupyter Notebook for our Interface to the env
+7. Install CudaToolkit and Cudnn
    ```sh
-   conda install jupyter notebook -y
-   ``` 
-8. Run Jupyter notebook
-   ```sh
-   Jupyter Notebook
+   conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 -y
    ```
+8. Install CudaToolkit and Cudnn
+   ```sh
+   pip install nvidia-pyindex
+   pip install nvidia-tensorrt==7.2.3.4
+   pip install pycocotools==2.0.2
+   pip install tensorflow-addons==0.19.0
+   ```
+9. Configure The system paths
+   ```sh
+   python3 -c "import tensorrt; print(tensorrt.__version__); assert tensorrt.Builder(tensorrt.Logger())"
+   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
+   mkdir -p $CONDA_PREFIX/etc/conda/activate.d
+   echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+   echo ln -s $CONDA_PREFIX/lib/python3.8/site-packages/tensorrt/libnvinfer.so.8  $CONDA_PREFIX/lib/libnvinfer.so.7
+   echo ln -s $CONDA_PREFIX/lib/python3.8/site-packages/tensorrt/libnvinfer_plugin.so.8 $CONDA_PREFIX/lib/libnvinfer_plugin.so.7
+   ``` 
+    Why ? when installing tensorrt we need configure the system paths, otherwise tensorrt cannot open share object file, So run command below to configure system paths. system paths will be automatically configured when you activate your conda environment 
+
+   <h3> NOTICE !!! </h3>
+    to see if configure the system paths is correct 
+
+    ```sh
+    code $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+    ```
+10. Deactivate and Activate again the conda env
+    ```sh
+    Conda deactivate
+    Conda activate tfod
+    ```
+11. Install Jupyter Notebook for our Interface to the env
+    ```sh
+    conda install jupyter notebook -y
+    ``` 
+12. Run Jupyter notebook
+    ```sh
+    Jupyter Notebook
+    ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
