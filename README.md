@@ -45,10 +45,7 @@ This README.md describes every step required to get going with your custom objec
 
 The purpose of this tutorial is to explain how to train you custom Convolutional Neural Network Object Detection Classifier with your custom image and Models that Tensorflow Provide, Also in this tutorial you will use a powerfull 'Jupyter Notebook' for interface and connect to your 'Ubuntu On Windows' At the end of this tutorial, you will have a program that can identify object with draw boxes around specific objects in pictures, videos, or in the webcam feed.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Serveral Good Tutorial avaliable in github for how to use Tensorflow Object Detection API. Hovewer in this tutorial that use Tensorflow version 2.11. Tensorflow >= 2.11 will no longger supported on Windows for GPU usage. Tensorflow for future version seems using Linux for supported GPU usage.  
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
@@ -63,6 +60,7 @@ Use the `BLANK_README.md` to get started.
 * [![Python][Python]][Python-url]
 * [![Ubuntu][Ubuntu]][Ubuntu-url]
 * [![Nvidia][Nvidia]][Nvidia-url]
+* [![Jupyter-Notebook][Jupyter-Notebook]][Jupyter-Notebook-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -110,3 +108,5 @@ This is an example of how to list things you need to use the software and how to
 [Ubuntu-url]: https://ubuntu.com/wsl
 [Nvidia]: https://img.shields.io/badge/Nvidia-000000?style=for-the-badge&logo=Nvidia&logoColor=green
 [Nvidia-url]: https://ubuntu.com/wsl
+[Jupyter-Notebook]: https://img.shields.io/badge/Jupyter/Notebook-000000?style=for-the-badge&logo=Jupyter&logoColor=orange
+[Jupyter-Notebook-url]: https://jupyter.org/
