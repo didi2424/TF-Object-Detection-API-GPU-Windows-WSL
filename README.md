@@ -2,7 +2,7 @@
 
 
 <!-- The Basics -->
-## 🦉 The Basics
+## The Basics
 
 This repository is a tutorial for how to use Tensorflow's Object Detection API (boxes Classsifier) to train an image into object detection classifier on Windows 11 Host. also when Tensorflow 2.11 is not support GPU inside Windows anymore, so we can use Ubuntu on Windows as our main host 
 
@@ -14,7 +14,7 @@ This README.md describes every step required to get going with your custom objec
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#The-Basics">The Basics</a>
+      <a href="#the-basics">The Basics</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
