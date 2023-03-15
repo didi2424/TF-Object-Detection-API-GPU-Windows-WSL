@@ -137,11 +137,10 @@ _Install Miniconda 3 inside WSL_
    pip install nvidia-tensorrt==7.2.3.4
    pip install pycocotools==2.0.2
    pip install tensorflow-addons==0.19.0
-   python3 -c "import tensorrt; print(tensorrt.__version__); assert tensorrt.Builder(tensorrt.Logger())"
+   
    ```
 5. Install Cuda Driver for Windows WSL
    ```sh
-   cd $CONDA_PREFIX
    wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-wsl-ubuntu.pin
    sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
    wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-wsl-ubuntu-12-1-local_12.1.0-1_amd64.deb
@@ -150,10 +149,10 @@ _Install Miniconda 3 inside WSL_
    sudo apt-get update
    sudo apt-get -y install cuda
    ```
-9. Configure The system paths you must deactive conda environment first to setup Configure The System Paths
+9. Configure The system paths you must deactive conda environment to setup Configure The System Paths
    ```sh
-   conda deactivate
-   mkdir -p $CONDA_PREFIX/etc/conda/ activate.d
+   cd $CONDA_PREFIX
+   mkdir -p $CONDA_PREFIX/etc/conda/activate.d
    echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
    echo ln -s $CONDA_PREFIX/lib/python3.8/site-packages/tensorrt/libnvinfer.so.8  $CONDA_PREFIX/lib/libnvinfer.so.7
    echo ln -s $CONDA_PREFIX/lib/python3.8/site-packages/tensorrt/libnvinfer_plugin.so.8 $CONDA_PREFIX/lib/libnvinfer_plugin.so.7
@@ -182,7 +181,7 @@ _Install Miniconda 3 inside WSL_
 
 
 ### Install Tensorflow Object API using Jupyter Notebook Interface
-Everything you need Build With ❤️ using Install-Tensorflow-Object-API.ipynb inside this Repository. This notebook contain to Download, install Tensorflow Model Garden, Make Directory for your project. 
+Everything you need Build With ❤️ using Install-Tensorflow-Object-API.ipynb inside this Repository. This notebook contain to Download, install Tensorflow Model Garden.
 
 
  
