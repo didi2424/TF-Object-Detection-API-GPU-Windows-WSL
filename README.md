@@ -167,6 +167,7 @@ _Install Miniconda 3 inside WSL_
     ```
 10. Deactivate and Activate again the conda env
     ```sh
+    conda deactivate
     conda activate tfod
     ```
 11. Install Jupyter Notebook for our Interface to the env
