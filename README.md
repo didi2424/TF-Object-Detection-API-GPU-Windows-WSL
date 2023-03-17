@@ -181,7 +181,7 @@ _Install Miniconda 3 inside WSL_
 
 ### 1. Install Tensorflow Object API using Jupyter Notebook Interface
 
-Everything you need, Build With ❤️ This notebook contain to Download, install Tensorflow Object Detection API. After you done to install, verification the installation so Tensorflow Object Detection is ready to use.
+Everything you need, Build With ❤️ This notebook contain to Download, install Tensorflow Object Detection API. After you done to install, verification the installation so Tensorflow Object Detection ready to use.
 
 ### 2. Create Label Map And TF record file
 
