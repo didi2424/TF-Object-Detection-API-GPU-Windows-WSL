@@ -182,13 +182,28 @@ _Install Miniconda 3 inside WSL_
 
 
 ### 1. Install Tensorflow Object API using Jupyter Notebook Interface
+
 Everything you need, Build With ❤️ using Install-Tensorflow-Object-API.ipynb inside this Repository. This notebook contain to Download, install Tensorflow Object Detection API. After you done to install, verification the installation so Tensorflow Object Detection is ready to use.
 
-### 2. Create Label Map And TF record file 
+### 2. Create Label Map And TF record file
+
 After installation you need to build labelmap file with .pbtxt format file. in this notebook you need to change variable class of object that match with your coco dataset format. 
 
 .record format file is tensorflow simple format for storing a sequence of binary file 
-because training with Tensorflow Object Detection API need a .record file you need to build a .record file with this notebook you need unzip dataset from image-studio into image directory, so notebook can run auto export of your .record file based on your custom dataset also this .record file for training proccess.
+because training with Tensorflow Object Detection API need a .record file. You need to build a .record file with this notebook, unzip dataset from image-studio into image directory, so notebook can run auto export of your .record file based on your custom dataset also this .record file for training proccess.
+
+### 3. Config And Training 
+
+Okay for now you have a labelmap.pbtxt and .record file from previous notebook.
+from pretrained model that you download in notebook 1, you need configuration the pipeline.config and save into your Workspace Directory. after you have your pipeline.config inside Workspace Directory. Let's Rock your GPU, Train your Costum Dataset, Costum Models with Powerfull GPU Engine. 
+
+### 4. Test Object Detection
+
+Finally you have to test your training data with an images. 
+with this notebook, notebook will call for training data that you have done in the previous notebook. Object Detection with Bounding Box will detect an object with percentage of the class for object that detected. 
+
+also in this notebook you will get a TFlite file for future project.
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
