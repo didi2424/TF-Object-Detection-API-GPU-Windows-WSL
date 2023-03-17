@@ -3,7 +3,7 @@
 <!-- The Basics -->
 ## The Basics
 
-This repository is a tutorial for how to use Tensorflow's Object Detection API (boxes Classsifier) to train an image into object detection classifier on Windows 11 Host. also when Tensorflow 2.11 is not support GPU inside Windows anymore, so we can use Ubuntu on Windows as our main host.
+This repository is a tutorial for how to use Tensorflow's Object Detection API (boxes Classsifier) to train an image into object detection classifier on Windows 11 Host. also when Tensorflow 2.11 is not support GPU inside Windows anymore we can use Ubuntu on Windows as our main host.
 
 
 This README.md describes every step required to get going with your custom object detection classifier :
@@ -44,9 +44,6 @@ The purpose of this tutorial is to explain how to train you custom Convolutional
 
 Serveral Good Tutorial avaliable in github for how to use Tensorflow Object Detection API. Hovewer in this tutorial that use Tensorflow version 2.11. Tensorflow >= 2.11 will no longger supported on Windows for GPU usage. Tensorflow for future version seems using Linux for supported GPU usage.  
 If you don't like to dual boot this is good tutorial for you ❤️
-
-If you
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -184,7 +181,7 @@ _Install Miniconda 3 inside WSL_
 
 ### 1. Install Tensorflow Object API using Jupyter Notebook Interface
 
-Everything you need, Build With ❤️ using Install-Tensorflow-Object-API.ipynb inside this Repository. This notebook contain to Download, install Tensorflow Object Detection API. After you done to install, verification the installation so Tensorflow Object Detection is ready to use.
+Everything you need, Build With ❤️ This notebook contain to Download, install Tensorflow Object Detection API. After you done to install, verification the installation so Tensorflow Object Detection is ready to use.
 
 ### 2. Create Label Map And TF record file
 
@@ -196,12 +193,12 @@ because training with Tensorflow Object Detection API need a .record file. You n
 ### 3. Config And Training 
 
 Okay for now you have a labelmap.pbtxt and .record file from previous notebook.
-from pretrained model that you download in notebook 1, you need configuration the pipeline.config and save into your Workspace Directory. after you have your pipeline.config inside Workspace Directory. Let's Rock your GPU, Train your Costum Dataset, Costum Models with Powerfull GPU Engine. 
+from pretrained model that you download in notebook 1, you need configuration the pipeline.config and save into your Workspace Directory. after you have your pipeline.config inside Workspace Directory. Let's Rock your GPU 💃💃💃, Train your Costum Dataset, Costum Models with Powerfull GPU Engine. 
 
 ### 4. Test Object Detection
 
-Finally you have to test your training data with an images. 
-with this notebook, notebook will call for training data that you have done in the previous notebook. Object Detection with Bounding Box will detect an object with percentage of the class for object that detected. 
+Finally you have to test 🧪 your training data with an images  
+with this notebook, notebook will call for training data that you have done in the previous notebook. Object Detection will identify object with draw boxes around specific objects in pictures 🖼️
 
 also in this notebook you will get a TFlite file for future project.
 
