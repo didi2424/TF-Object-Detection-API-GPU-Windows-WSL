@@ -28,7 +28,7 @@ This README.md describes every step required to get going with your custom objec
         <li><a href="#environment-in-ubuntu-on-windows-wsl">Environment in Ubuntu on Windows _(WSL)_</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#notebook-description">Notebook Description</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -180,6 +180,7 @@ _Install Miniconda 3 inside WSL_
     ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Notebook Description
 
 ### 1. Install Tensorflow Object API using Jupyter Notebook Interface
 
