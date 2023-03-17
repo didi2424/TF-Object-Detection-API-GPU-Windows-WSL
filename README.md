@@ -182,13 +182,13 @@ _Install Miniconda 3 inside WSL_
 
 
 ### 1. Install Tensorflow Object API using Jupyter Notebook Interface
-Everything you need, Build With ❤️ using Install-Tensorflow-Object-API.ipynb inside this Repository. This notebook contain to Download, install Tensorflow Object Detection API. After you have install you will vertivy installation so Tensorflow Object Detection is ready to use.
+Everything you need, Build With ❤️ using Install-Tensorflow-Object-API.ipynb inside this Repository. This notebook contain to Download, install Tensorflow Object Detection API. After you done to install, verification the installation so Tensorflow Object Detection is ready to use.
 
 ### 2. Create Label Map And TF record file 
+After installation you need to build labelmap file with .pbtxt format file. in this notebook you need to change variable class of object that match with your coco dataset format. 
 
-
- 
-
+.record format file is tensorflow simple format for storing a sequence of binary file 
+because training with Tensorflow Object Detection API need a .record file you need to build a .record file with this notebook you need unzip dataset from image-studio into image directory, so notebook can run auto export of your .record file based on your custom dataset also this .record file for training proccess.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
