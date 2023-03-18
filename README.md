@@ -29,11 +29,7 @@ This README.md describes every step required to get going with your custom objec
       </ul>
     </li>
     <li><a href="#notebook-description">Notebook Description</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+
   </ol>
 </details>
 
@@ -170,6 +166,7 @@ _Install Miniconda 3 inside WSL_
 11. Install Jupyter Notebook for our Interface to the env
     ```sh
     conda install jupyter notebook -y
+    pip install label-studio
     ``` 
 12. Run Jupyter notebook
     ```sh
