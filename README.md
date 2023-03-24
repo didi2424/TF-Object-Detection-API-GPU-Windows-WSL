@@ -197,7 +197,7 @@ from pretrained model that you download in notebook 1, you need configuration th
 Finally you have to test 🧪 your training data with an images  
 with this notebook, notebook will call for training data that you have done in the previous notebook. Object Detection will identify object with draw boxes around specific objects in pictures 🖼️
 
-also in this notebook you will get a TFlite file for future project.
+also in this notebook you will get a TFlite file for future project example to use on Tensorflow Lite Android
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
