@@ -3,7 +3,7 @@
 <!-- The Basics -->
 ## The Basics
 
-This repository is a tutorial for how to use Tensorflow's Object Detection API (boxes Classsifier) to train an image into object detection classifier on Windows 11 Host. also when Tensorflow 2.11 is not support GPU inside Windows anymore we can use Ubuntu on Windows as our main host.
+This repository is a tutorial for how to use Tensorflow's Object Detection API (boxes Classsifier) to train an image into object detection classifier on Windows 11 as Host. also when Tensorflow 2.11 is not support GPU inside Windows anymore we can use Ubuntu on Windows as our main host.
 
 
 This README.md describes every step required to get going with your custom object detection classifier :
@@ -43,19 +43,8 @@ If you don't like to dual boot this is good tutorial for you ❤️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Environment on Windows 10/11
-* [![Windows][Windows]][Windows-url]
-* [![Nvidia][Nvidia]][Nvidia-url]
 
 
-### Built With
-
-* [![Tensorflow][Tensorflow]][Next-url]
-* [![Python][Python]][Python-url]
-* [![Ubuntu][Ubuntu]][Ubuntu-url]
-* [![Nvidia][Nvidia]][Nvidia-url]
-* [![Jupyter-Notebook][Jupyter-Notebook]][Jupyter-Notebook-url]
-* [![Miniconda][Miniconda]][Miniconda-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -69,7 +58,12 @@ Tensorflow's GPU allows your PC to use the graphic card to provide extra process
 
 
 <!-- Environment in Windows -->
-## Environment in Windows
+
+
+### Environment on Windows 10/11
+* [![Windows][Windows]][Windows-url]
+* [![Nvidia][Nvidia]][Nvidia-url]
+* [![Ubuntu][Ubuntu]][Ubuntu-url]
 
 _Enable you windows WSL_
 1. Click Start on your windows and search Windows Features
@@ -96,8 +90,17 @@ _Downloads Ubuntu on Windows_
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+
 <!-- Environment in Ubuntu on Windows WSL -->
 ### Environment in Ubuntu on Windows WSL
+
+* [![Miniconda][Miniconda]][Miniconda-url]
+* [![Python][Python]][Python-url]
+* [![Tensorflow][Tensorflow]][Next-url]
+* [![Nvidia][Nvidia]][Nvidia-url]
+* [![Jupyter-Notebook][Jupyter-Notebook]][Jupyter-Notebook-url]
+
+
 _Install Miniconda 3 inside WSL_
 1. Open your WSL and Command
    ```sh
@@ -192,7 +195,7 @@ understanding result.json using pycocotools and pylabel
 ### 3. Config And Training 
 
 Okay for now you have a labelmap.pbtxt and .record file from previous notebook.
-from pretrained model that you download in notebook 1, you need configuration the pipeline.config and save into your Workspace Directory. after you have your pipeline.config inside Workspace Directory. Let's Rock your GPU 💃💃💃, Train your Costum Dataset, Costum Models with Powerfull GPU Engine. 
+from pretrained model that you download in notebook 1, you need configuration the pipeline.config and save into your Workspace Directory. after you have your pipeline.config inside Workspace Directory. Let's Rock your GPU 💃💃💃, Train your Costum Dataset and Costum Models with Powerfull GPU Engine. 
 
 ### 4. Test Object Detection
 
@@ -200,6 +203,8 @@ Finally you have to test 🧪 your training data with an images
 with this notebook, notebook will call for training data that you have done in the previous notebook. Object Detection will identify object with draw boxes around specific objects in pictures 🖼️
 
 also in this notebook you will get a TFlite file for future project example to use on Tensorflow Lite Android
+
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
