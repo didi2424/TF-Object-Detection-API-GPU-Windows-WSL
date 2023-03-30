@@ -47,9 +47,6 @@ If you don't like to dual boot this is good tutorial for you ❤️
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
