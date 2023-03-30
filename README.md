@@ -190,7 +190,7 @@ After installation you need to build labelmap file with .pbtxt format file. in t
 .record format file is tensorflow simple format for storing a sequence of binary file 
 because training with Tensorflow Object Detection API need a .record file. You need to build a .record file with this notebook, unzip dataset from image-studio into image directory, so notebook can run auto export of your .record file based on your custom dataset also this .record file for training proccess.
 
-understanding result.json using pycocotools and pylabel
+understanding result.json using pycocotools and pylabel library 
 
 ### 3. Config And Training 
 
