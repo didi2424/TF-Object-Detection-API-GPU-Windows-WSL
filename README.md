@@ -201,6 +201,11 @@ with this notebook, notebook will call for training data that you have done in t
 
 also in this notebook you will get a TFlite file for future project example to use on Tensorflow Lite Android
 
+<img
+  src="https://github.com/didi2424/TF-Object-Detection-API-GPU-Windows-WSL/blob/main/Notebook%20Preview%20Output/output_counter_single_image.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 
 
